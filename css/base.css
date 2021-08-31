@@ -44,6 +44,10 @@ span.char_del {
   text-decoration-line: line-through;
   text-decoration-style: solid;
 }
+video {
+  background: #000;
+  width: 50%;
+}
 
 /* id */
 #page-top {
@@ -322,7 +326,7 @@ th {
 */
 
 
-/* Books */
+/* Books 
 .done {
   background-color: #a52;
   color: #fff;
@@ -339,8 +343,65 @@ th {
 .waiting {
   background-color: #ffc;
 }
+*/
 
 /* Portfolio */
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  color: #222;
+  text-decoration: none;
+  margin:0 1em;
+  width: 33.33333333%;
+}
+.card_header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_title {
+  padding: 1em 1em 0;
+  font-size: 2.5rem;
+  order: 1;
+}
+.card_thumbnail {
+  margin: 0;
+  order: 0;
+}
+.card_img {
+  width: 100%;
+}
+.card_body {
+  padding: 1em;
+}
+.card_text {
+  font-size: 1.25rem;
+}
+.card_text + .card_text {
+  margin-top: .5em;
+}
+.card_text.-time {
+  text-align: right;
+}
+.card_footer {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+}
+.card_btn {
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+}
+.card_btn.-mini {
+  padding: .5em 1em;
+  border-radius: .25rem;
+  background-color: #f70;
+  color: #fff;
+  font-weight: bold;
+}
+.card_btn.-mini:hover,
+.card_btn.-mini:focus {
+  background-color: #fc8;
+}
 
 /* FAQ */
 label {
